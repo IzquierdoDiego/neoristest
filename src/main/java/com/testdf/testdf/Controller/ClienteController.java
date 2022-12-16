@@ -7,7 +7,7 @@ package com.testdf.testdf.Controller;
 
 import com.testdf.testdf.exception.ResourceNotFoundException;
 import com.testdf.testdf.model.Cliente;
-import com.testdf.testdf.service.ClenteServiceImpl;
+import com.testdf.testdf.service.ClienteServiceImpl;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
@@ -32,7 +32,7 @@ import org.springframework.web.server.ResponseStatusException;
 public class ClienteController {
     
     @Autowired 
-    private ClenteServiceImpl clenteServiceImpl;
+    private ClienteServiceImpl clenteServiceImpl;
     
     @GetMapping("/get")
     public List<Cliente> list() {
